@@ -17,7 +17,8 @@ for line in sys.stdin.readlines():
         y_cut.append(pos)
 
 # 정렬
-x_cut, y_cut = sorted(x_cut), sorted(y_cut)
+x_cut.sort()
+y_cut.sort()
 
 # 면적 저장할 필드
 dimension = 0
