@@ -24,7 +24,6 @@ for i in range(w_n):
 for i in range(w_n):
     for j in range(i + 1, w_n):
         plus = weights[j] + weights[i]
-        comb[plus] = 1
         if comb[plus] == 0:
             comb[plus] = 1
 
