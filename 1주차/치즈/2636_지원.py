@@ -18,7 +18,7 @@ def bfs():
     queue.append((0, 0))
     # 이미 방문한 칸인지 체크하기 위한 2D Array - 처음은 False
     visited = [[False for _ in range(row)] for _ in range(col)]
-    # 0,0에서 시작하니 True - 외부 공기와 연결된 모든 공기를 탐색함으로써 겉을 녹일 수 있음 
+    # 0,0에서 시작하니 True - 외부 공기와 연결된 모든 공기를 탐색함으로써 겉을 녹일 수 있음
     visited[0][0] = True
 
     while queue:
