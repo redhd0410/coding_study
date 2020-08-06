@@ -1,0 +1,23 @@
+/*dp*/
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        long[] dp = new long[N+1];
+        long w,h;
+        dp[0] = 1;
+        dp[1] = 1;
+        for(int i=2;i<N;i++){
+            dp[i] = dp[i-1]+dp[i-2];
+        }
+        if(N>1){
+            w = dp[N-1]+dp[N-2];
+            h = dp[N-1];
+        }else{
+            w = dp[N-1];
+            h = dp[N-1];
+        }
+        System.out.println((w+h)*2);
+    }
+}
