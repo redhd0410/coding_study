@@ -32,7 +32,7 @@ for d in data:
             print(box)
             box = rooms[i]
 
-    # 마을 용량에서 박스 용량 빼줌 
+    # 마을 용량에서 박스 용량 빼줌
     for i in range(start, end):
         rooms[i] -= box
 
